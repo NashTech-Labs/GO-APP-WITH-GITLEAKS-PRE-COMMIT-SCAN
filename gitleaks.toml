@@ -1,0 +1,10 @@
+title = "gitleaks config"
+
+[[rules]]
+id = "app-secret-detect-rule"
+description = "Identified a pattern that may indicate app Secret, risking unauthorized access"
+regex = '''(?:A3T[A-Z0-9]|AKIA|ASIA|ABIA|ACCA)[A-Z0-9]{18}'''
+keywords = [
+    "akia","asia","abia","acca",
+]
+
